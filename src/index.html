@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ${htmlAttrs}>
+  <head>
+    ${head}
+    <link rel="preconnect" href="https://app.snipcart.com" />
+    <link rel="preconnect" href="https://cdn.snipcart.com" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.snipcart.com/themes/v3.0.23/default/snipcart.css"
+    />
+  </head>
+  <body ${bodyAttrs}>
+    ${app} ${scripts}
+    <div
+      id="snipcart"
+      data-api-key="MDg5MmMwOWQtOTIxZi00ZTE4LWE3MmUtNDlkZjcyZmQ2OThjNjM3Mzg2NDU1MDUyODI0NjM2"
+      hidden
+    ></div>
+
+    <script
+      async
+      src="https://cdn.snipcart.com/themes/v3.0.23/default/snipcart.js"
+    ></script>
+  </body>
+</html>
