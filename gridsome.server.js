@@ -20,7 +20,9 @@ module.exports = function(api) {
   });
 
   api.loadSource(async (actions) => {
-    const { data } = await axios.get("http://localhost:1337/products");
+    const { data } = await axios.get(
+      "https://mealzers-backend.herokuapp.com/products"
+    );
     const collection = actions.addCollection({
       typeName: "Product",
     });

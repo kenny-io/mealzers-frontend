@@ -6,7 +6,9 @@
           class="white--text align-end"
           height="200px"
           width="300px"
-          :src="`http://localhost:1337${this.$page.product.image}`"
+          :src="
+            `https://mealzers-backend.herokuapp.com${this.$page.product.image}`
+          "
         >
         </v-img>
 
@@ -29,7 +31,9 @@
             :data-item-id="this.$page.product.id"
             :data-item-description="this.$page.product.description"
             :data-item-image="
-              `http://localhost:1337${this.$page.product.image}`
+              `https://mealzers-backend.herokuapp.com${
+                this.$page.product.image
+              }`
             "
             :data-item-price="this.$page.product.price"
             :data-item-name="this.$page.product.title"

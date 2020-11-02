@@ -18,7 +18,9 @@
             <v-card :loading="loading" class="ma-3" shaped>
               <v-img
                 height="250"
-                :src="`http://localhost:1337${edge.node.image}`"
+                :src="
+                  `https://mealzers-backend.herokuapp.com${edge.node.image}`
+                "
               ></v-img>
               <v-card-title>{{ edge.node.title }}</v-card-title>
               <v-card-text>
@@ -49,7 +51,9 @@
                   class="snipcart-add-item"
                   :data-item-id="edge.node.id"
                   :data-item-description="edge.node.description"
-                  :data-item-image="`http://localhost:1337${edge.node.image}`"
+                  :data-item-image="
+                    `https://mealzers-backend.herokuapp.com${edge.node.image}`
+                  "
                   :data-item-price="edge.node.price"
                   :data-item-name="edge.node.title"
                 >
