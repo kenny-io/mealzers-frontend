@@ -46,9 +46,7 @@
                   class="snipcart-add-item"
                   :data-item-id="edge.node.id"
                   :data-item-description="edge.node.description"
-                  :data-item-image="
-                    `https://mealzers-backend.herokuapp.com${edge.node.image}`
-                  "
+                  :data-item-image="edge.node.image"
                   :data-item-price="edge.node.price"
                   :data-item-name="edge.node.title"
                 >
