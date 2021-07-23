@@ -21,8 +21,10 @@ module.exports = function(api) {
 
   api.loadSource(async (actions) => {
     const { data } = await axios.get(
-      "https://mealzers-backend.herokuapp.com/products"
+      "http://test.gasport.com.ng/API/OrderList/"
     );
+
+    console.log(data);
     const collection = actions.addCollection({
       typeName: "Product",
     });
@@ -33,9 +35,7 @@ module.exports = function(api) {
         price: product.price,
         rating: product.rating,
         description: product.description,
-        categories: product.categories,
-        thumbnail: product.image.name,
-        image: product.image.formats.thumbnail.url,
+        image: product.image,
         instructions: product.instructions,
       });
     }

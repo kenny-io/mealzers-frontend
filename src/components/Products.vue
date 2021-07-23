@@ -16,12 +16,7 @@
             style="text-decoration: none; color: inherit"
           >
             <v-card :loading="loading" class="ma-3" shaped>
-              <v-img
-                height="250"
-                :src="
-                  `https://mealzers-backend.herokuapp.com${edge.node.image}`
-                "
-              ></v-img>
+              <v-img height="250" :src="edge.node.image"></v-img>
               <v-card-title>{{ edge.node.title }}</v-card-title>
               <v-card-text>
                 <v-row align="center" class="mx-0">
